@@ -3,6 +3,8 @@ jasypt:
         algorithm: PBEWithMD5AndDES
         password: superkey
 
+database: mysql
+
 spring:
     cloud:
         config:

@@ -17,10 +17,7 @@ spring:
             base-path: /api
     application:
         name: standalone
-    datasource:
-        driver-class-name: com.mysql.cj.jdbc.Driver
-        password: ${RDS_PASSWORD:tpm1234}
-        username: ${RDS_USERNAME:root}
+    datasource: 
         schema: classpath:/schema.sql
         initialization-mode: always
     jpa:
