@@ -1,6 +1,6 @@
-create database IF NOT EXISTS ebdb;
+create database IF NOT EXISTS marketplace;
 
-USE ebdb;
+USE marketplace;
 
 		
 CREATE TABLE IF NOT EXISTS company (
