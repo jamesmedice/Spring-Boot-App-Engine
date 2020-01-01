@@ -19,7 +19,8 @@ spring:
         name: standalone
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://${DATABASE_HOST:127.0.0.1}:${DATABASE_PORT:3306}/${DATABASE_NAME:marketplace}?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+        url: jdbc:mysql://google/${CLOUD_SQL_DATABASE_NAME:marketplace}?cloudSqlInstance=${CLOUD_SQL_INSTANCE:qwiklabs-gcp-b3ddd98154b93257:us-central1:mysqlcontainer}&socketFactory=com.google.cloud.sql.mysql.SocketFactory
+#       url: jdbc:mysql://${DATABASE_HOST:127.0.0.1}:${DATABASE_PORT:3306}/${DATABASE_NAME:marketplace}?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
         password: ${RDS_PASSWORD:tpm1234}
         username: ${RDS_USERNAME:root}
         schema: classpath:/schema.sql
