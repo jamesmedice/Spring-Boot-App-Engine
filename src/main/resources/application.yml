@@ -1,0 +1,28 @@
+#set up properties
+server:
+    port: ${SERVER_PORT:8080}
+
+
+management:
+    security:
+        enabled: false
+    endpoint:
+        restart:
+            enabled: true
+
+spring:
+    data:
+        rest: 
+            base-path: /api
+    application:
+        name: standalone
+    datasource:
+        password: ${RDS_PASSWORD:tpm1234}
+        username: ${RDS_USERNAME:root}
+        schema: classpath:/schema.sql
+        initialization-mode: always
+    jpa:
+        show-sql: true
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5InnoDBDialect
