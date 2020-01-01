@@ -18,6 +18,7 @@ spring:
         name: standalone
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://${DATABASE_HOST:104.198.233.3}:${DATABASE_PORT:3306}/${DATABASE_NAME:marketplace}?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
         password: ${RDS_PASSWORD:tpm1234}
         username: ${RDS_USERNAME:root}
         schema: classpath:/schema.sql
