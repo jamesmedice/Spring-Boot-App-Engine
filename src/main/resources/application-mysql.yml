@@ -1,8 +1,8 @@
 spring:
     datasource:
         driverClassName: com.mysql.jdbc.Driver
-        url: jdbc:mysql://google/${CLOUD_SQL_DATABASE_NAME:marketplace}?cloudSqlInstance=${DEVSHELL_PROJECT_ID:qwiklabs-gcp-eb18957c65971bd3}:us-central1:mysqlcontainer&socketFactory=com.google.cloud.sql.mysql.SocketFactory&user=${USER:root}&password=${PASSWORD:tpm1234}
-        username: ${USER:root}
+        url: jdbc:mysql://google/${CLOUD_SQL_DATABASE_NAME:marketplace}?cloudSqlInstance=${DEVSHELL_PROJECT_ID:qwiklabs-gcp-eb18957c65971bd3}:us-central1:mysqlcontainer&socketFactory=com.google.cloud.sql.mysql.SocketFactory&user=${USER_ID:root}&password=${PASSWORD:tpm1234}
+        username: ${USER_ID:root}
         password: ${PASSWORD:tpm1234}
         initialization-mode: always
         schema: classpath:/schema.sql
