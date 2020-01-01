@@ -3,7 +3,7 @@ instance_class: F4
 runtime_config:
   jdk: openjdk8
 env_variables:
-  SPRING_PROFILES_ACTIVE: "gcp,mysql"
+  SPRING_PROFILES_ACTIVE: "bootstrap,mysql,dev"
 handlers:
   - url: /.*
     script: this field is required, but ignored
