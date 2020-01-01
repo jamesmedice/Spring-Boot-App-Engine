@@ -15,11 +15,11 @@ spring:
             profile: dev, cloud, mysql
             label: master
         gcp:
-            project-id: perceptive-day-252709
+            project-id: ${DEVSHELL_PROJECT_ID:qwiklabs-gcp-b3ddd98154b93257}
             credentials:
                 location: classpath:credentials.json
             sql:
                 enabled: true
                 database-type: mysql
                 database-name: marketplace
-                instance-connection-name: ${PROJECT_ID:perceptive-day-252709}:us-central1:mysqlcontainer 
+                instance-connection-name: ${DEVSHELL_PROJECT_ID:qwiklabs-gcp-b3ddd98154b93257}:us-central1:mysqlcontainer 
