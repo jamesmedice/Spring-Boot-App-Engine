@@ -3,7 +3,7 @@ env: flex
 runtime_config:
   jdk: openjdk8
 env_variables:
-  SPRING_PROFILES_ACTIVE: "gcp,mysql,dev"
+  SPRING_PROFILES_ACTIVE: "gcp,mysql,dev,bootstrap"
 handlers:
 - url: /.*
   script: this field is required, but ignored
