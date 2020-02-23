@@ -1,4 +1,4 @@
-service: app-v2
+service: app-v3
 runtime: java
 env: flex
 runtime_config:
